@@ -1,9 +1,9 @@
-###ͨ���п���ȡ�ߵµ�ͼPOI����###
+###通过切块爬取高德地图POI数据###
 
-Tips��ͨ����������ȡ�ߵµ�ͼPOI���https://github.com/zhoujungis/amap_poi_scrapy
+Tips：通过城市名爬取高德地图POI详见https://github.com/zhoujungis/amap_poi_scrapy
 
-1. ����cutmap.py���������������ָ��POI���ݲ�����720����С�����޸�·����Key��
-2.����get_poi_by_polygon.py���ֿ���ȡ���ݣ��޸�·����Key��
-3.ȥ�����б�ͷ��ֻ����һ����Ȼ��ʹ��excel_merge.py�ϲ����е�excel���޸Ķ�Ӧ��·����
-4.���ݷ��У���location��Ϊlon��lat����
-5.ʹ��huoxing2wgs84.py��������ת����ת��Ϊwgs1984��Ȼ������arcgisת��Ϊshape�ļ���all done���������޸Ķ�Ӧ��·����
+1.运行cutmap.py，将整个大块区域分割成POI数据不超过720条的小区域（修改路径，Key）
+2.运行get_poi_by_polygon.py，分块爬取数据（修改路径，Key）
+3.去除所有表头，只保留一个，然后使用excel_merge.py合并所有的excel（修改对应的路径）
+4.数据分列，将location分为lon和lat两列
+5.使用huoxing2wgs84.py进行坐标转换，转化为wgs1984，然后利用arcgis转化为shape文件，all done！！！（修改对应的路径）
