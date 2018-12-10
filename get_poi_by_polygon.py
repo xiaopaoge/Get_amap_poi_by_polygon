@@ -124,7 +124,7 @@ if __name__ == '__main__':
             # 获取数据列
             bkeys = ['id', 'biz_type', 'name', 'type', 'address', 'tel', 'location', 'pcode', 'pname', 'citycode', 'cityname',
                      'adcode', 'adname', 'business_area']
-            write_data_to_excel(json_name,hkeys,bkeys,"poi_data\\"+types++"-"+str(i)+"-高德地图")
+            write_data_to_excel(json_name,hkeys,bkeys,str("poi_data/"+types+"-"+str(i)+"-高德地图"))
             if(i%13==0):
                 time.sleep(30)
             elif(i%13!=0):
