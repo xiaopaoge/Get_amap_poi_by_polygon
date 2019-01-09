@@ -13,3 +13,5 @@ Tips：通过城市名爬取高德地图POI详见https://github.com/zhoujungis/a
 4.数据分列，将location分为lon和lat两列
 
 5.使用huoxing2wgs84.py进行坐标转换，转化为wgs1984，然后利用arcgis转化为shape文件，all done！！！（修改对应的路径）
+
+6.有问题请联系；zhoujunseu@163.com
