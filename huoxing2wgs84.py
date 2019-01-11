@@ -91,8 +91,9 @@ def out_of_china(lng, lat):
 #利用excel手动将合成的excel转化为csv，此处需要传入csv文件
 f=open(r".csv","r")
 fnew=open(r".csv","w")
-
-for line in f:
+f.readline()
+lines = f.readlines()
+for line in lines:
     #print(line.split(",")[-9])
     lng=float(line.split(",")[-9])
     lat=float(line.split(",")[-8])
